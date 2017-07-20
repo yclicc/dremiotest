@@ -62,6 +62,6 @@ def get_line():
     total_spent = quantity_purchased * cost
     return ",".join([keyid, region, receive_time, purchaser_id, purchaser_name, category, item_name, primary_material, secondary_material, tertiary_material, quaternary_material, str(quantity_purchased), str(total_spent)]) + "\n"
 
-with open("data.csv","w") as file:
+with open("buyshopitem.csv","w") as file:
     for i in range(n_records):
         file.write(get_line())
